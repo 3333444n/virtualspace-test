@@ -79,9 +79,9 @@
         <pre id="api-content">Fetching data...</pre>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="module">
+        import * as THREE from 'https://unpkg.com/three@0.128.0/build/three.module.js';
 
-    <script>
         // --- SCENE, CAMERA, RENDERER, ROOM, OBJECTS, LIGHTING ---
         const scene = new THREE.Scene();
         scene.background = new THREE.Color(0x101010);
